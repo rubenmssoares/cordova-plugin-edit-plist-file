@@ -29,9 +29,16 @@
     
     <!-- ios -->
     <platform name="ios">
-        <edit-config file="*-Info.plist" mode="merge" target="UIUserInterfaceStyle">
-            <string>Light</string>
-        </edit-config>
-  </platform>
+        
+        <!-- iOS9 whitelisting -->
+        <config-file target="*-Info.plist" parent="UIUserInterfaceStyle">
+          <string>Light</string>
+        </config-file>
+
+        <config-file target="*-Info.plist" parent="UIViewControllerBasedStatusBarAppearance">
+          <true />
+        </config-file>
+        
+    </platform>
     
 </plugin>
