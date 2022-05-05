@@ -31,7 +31,7 @@
     <platform name="ios">
         
         <!-- iOS9 whitelisting -->
-        <config-file target="*-Info.plist" parent="LSApplicationQueriesSchemes">
+        <config-file target="*-Info.plist" parent="UIUserInterfaceStyle">
             <string>Light</string>
         </config-file>      
         
